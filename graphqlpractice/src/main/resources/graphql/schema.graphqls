@@ -1,0 +1,27 @@
+
+
+type Query{
+allbooks:[Book]
+onebook(id:Int):Book
+
+
+}
+
+
+type Mutation{
+
+addBook(title: String, author: String): Book
+}
+
+
+type Book{
+
+id:ID!
+title:String
+author:String
+
+}
+
+
+
+
